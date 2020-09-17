@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* <기본셋> */
+
+.wrap {
+    width: 980px;
+    position: relative;
+    margin: 0 auto;
+}
+header .util {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+header .util li {
+    float: left;
+    padding-right: 7px;
+    padding-left: 7px;
+    background-image: url("../images/line.jpg");
+    background-repeat: no-repeat;
+    font-size: 10px;
+}
+header .util li:first-child{
+    background-image: none;
+}
+header .util li:first-child img {
+    padding-right:10px;
+}
+header .util li:last-child {
+    margin-right: 0px;
+}
+.color {
+    color:rgb(50, 139, 98);
+}
+.wrap h1 img{
+    margin-top: 35px;
+}
+.gnb{
+    /* margin-right: 0px;
+    margin-top: 45px; */
+    position: absolute;
+    top:45px;
+    right:7px;
+}
+.gnb li {
+    float: left;
+    margin-right: 50px;
+    font-size: 15px;
+}
+.gnb li:last-child {
+    margin-right: 0px;
+}
+.gng ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.mainbn > a {
+    display:block;
+    width: 100%;
+    height:565px;
+    background-image: url("../images/main_visual_01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pager a{
+    float: left;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.4);
+    /* rgb : 불투명색깔(000:검은색) / rgba : 약간투명 */
+    /* text-indent: 9999px; */
+    /* 글자없애기 - alt같은 느낌 */
+    margin-left:14px;
+}
+.pager:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.pager a:first-child {
+    margin-left: 0px;
+}
+.pager {
+    position: absolute;
+    bottom: 22px;
+    left: calc(50% - 63px);
+}
+.container1{
+    margin-top: 64px;
+    margin-bottom: 20px;
+}
+.container1 .about{
+    /* display: inline-block; */
+    /* width:;
+    height: ; */
+    margin-right: 22px;
+    float: left;
+}
+.container1:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.container1 .about:last-child {
+    margin-right: 0px;
+}
+.container2 h3 {
+    margin-bottom: 64px;
+}
+.story{
+    float: left;
+    width: 312px;
+    margin-right: 22px;
+    
+}
+.story:last-child {
+    margin-right: 0px;
+}
+.container2:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+footer{
+    background-color:#32404d;
+    text-align: center;
+}
+/* .container2 .item{
+    float: left;
+    margin-bottom: 22px;
+}
+.story1:after {
+    display: block;
+    content: "";
+    clear: both;
+} */
+.item{
+    /* margin-bottom: 22px; */
+    position: relative;
+    margin-right: 22px;
+    margin-bottom: 22px;
+}
+.over{
+    position: absolute;
+    top:0; left:0;
+    opacity:0;
+    /* 투명도 -> opacity:0 = 아예 안보임 / opacity:1 = 다 보임*/
+    transition:all 0.8s;
+    /* 0->1로 갈때 전환되는 시간이 0.8초임 */
+}
+.item:hover .over{
+    /* 아이템에 hover를 했을때 아이템 안에있는 over클래스가 밑을 따라라 */
+    opacity:1;
+}
+.box:last-child {
+    margin-right: 0px;
+}
